@@ -1,0 +1,4 @@
+2026-02-10 21:56:27,525 - root - INFO - Random seed set to 42
+2026-02-10 21:56:27,529 - FedServer - INFO - Server initialized on cpu
+2026-02-10 21:56:27,530 - FedServer - INFO - Server started on 127.0.0.1:5000
+2026-02-10 21:56:27,530 - FedServer - INFO - Waiting for 3 clients to connect...

@@ -93,15 +93,5 @@ class CNNCifar(nn.Module):
         x = self.fc3(x)
         return x
 
-def get_model(model_name: str, **kwargs):
-    """获取模型实例"""
-    models = {
-        'SimpleNN': SimpleNN,
-        'CNNMnist': CNNMnist,
-        'CNNCifar': CNNCifar
-    }
-    
-    if model_name not in models:
-        raise ValueError(f"Unknown model: {model_name}. Available: {list(models.keys())}")
-    
-    return models[model_name](**kwargs)
+# 默认导出
+__all__ = ['SimpleNN', 'CNNMnist', 'CNNCifar']
