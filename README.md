@@ -49,7 +49,8 @@ python run_client.py --client_id 1 --server_port 5000
 # 终端3
 python run_client.py --client_id 2 --server_port 5000
 
-1.1
+### 1.1
+
  配置说明
 服务器配置：修改config.json中的server部分
 
@@ -76,7 +77,7 @@ IID和非IID数据分布
 可扩展的架构
 
 
-1.2主要改进：
+### 1.2主要改进：
 修复了配置加载问题：create_server 函数现在正确处理字典和文件路径
 
 增强了错误处理：添加了更完善的异常处理
@@ -88,11 +89,13 @@ IID和非IID数据分布
 增加了工具函数：数据划分、统计、可视化等
 
 优化了通信：添加了超时处理和连接状态管理
-1.3改进：
+
+### 1.3改进：
 修复了utils.py 中的导入问题
 
 修复 server.py 中的 create_server 函数
-1.4修复的主要问题：
+
+### 1.4修复的主要问题：
 utils.py: 添加了 import torch.nn as nn，修复了 nn.Module 未定义的问题
 
 server.py:
