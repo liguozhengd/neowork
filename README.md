@@ -5,16 +5,27 @@
 项目结构：
 text
 federated-learning/
+
 ├── server.py           # 服务器主文件
+
 ├── models.py           # 模型定义
+
 ├── utils.py            # 工具函数
+
 ├── config.json         # 配置文件
+
 ├── run_server.py       # 服务器启动脚本
+
 ├── requirements.txt    # 依赖包
+
 ├── checkpoints/        # 模型保存目录
+
 ├── logs/               # 日志目录
+
 ├── results/            # 结果目录
+
 └── data/               # 数据目录（自动下载）
+
 安装依赖：
 bash
 pip install -r requirements.txt
