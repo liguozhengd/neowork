@@ -1,0 +1,62 @@
+2026-02-12 12:49:35,313 - root - INFO - Random seed set to 42
+2026-02-12 12:49:35,346 - FedServer - INFO - Server initialized on cpu
+2026-02-12 12:49:35,347 - FedServer - INFO - Server started on 127.0.0.1:5000
+2026-02-12 12:49:35,347 - FedServer - INFO - Waiting for 3 clients to connect...
+2026-02-12 12:50:23,315 - FedServer - INFO - Client 0 connected from ('127.0.0.1', 38090)
+2026-02-12 12:50:29,690 - FedServer - INFO - Client 1 connected from ('127.0.0.1', 38091)
+2026-02-12 12:50:51,819 - FedServer - INFO - Client 2 connected from ('127.0.0.1', 38093)
+2026-02-12 12:50:51,820 - FedServer - INFO - Starting federated training...
+2026-02-12 12:50:51,820 - FedServer - INFO - 
+============================================================
+2026-02-12 12:50:51,823 - FedServer - INFO - Round 1/5
+2026-02-12 12:50:51,823 - FedServer - INFO - ============================================================
+2026-02-12 12:50:51,829 - FedServer - INFO - Selected clients: [0, 1, 2]
+2026-02-12 12:51:00,751 - FedServer - INFO - Received update from client 0, weight: 20000
+2026-02-12 12:51:00,756 - FedServer - INFO - Received update from client 1, weight: 20000
+2026-02-12 12:51:00,759 - FedServer - INFO - Received update from client 2, weight: 20000
+2026-02-12 12:51:00,759 - FedServer - INFO - Aggregating 3 client updates
+2026-02-12 12:51:00,771 - FedServer - INFO - Checkpoint saved: ./checkpoints/model_round_0.pth
+2026-02-12 12:51:00,771 - FedServer - INFO - 
+============================================================
+2026-02-12 12:51:00,772 - FedServer - INFO - Round 2/5
+2026-02-12 12:51:00,772 - FedServer - INFO - ============================================================
+2026-02-12 12:51:00,772 - FedServer - INFO - Selected clients: [1, 2, 0]
+2026-02-12 12:51:09,562 - FedServer - INFO - Received update from client 1, weight: 20000
+2026-02-12 12:51:09,565 - FedServer - INFO - Received update from client 2, weight: 20000
+2026-02-12 12:51:09,567 - FedServer - INFO - Received update from client 0, weight: 20000
+2026-02-12 12:51:09,568 - FedServer - INFO - Aggregating 3 client updates
+2026-02-12 12:51:09,569 - FedServer - INFO - 
+============================================================
+2026-02-12 12:51:09,569 - FedServer - INFO - Round 3/5
+2026-02-12 12:51:09,569 - FedServer - INFO - ============================================================
+2026-02-12 12:51:09,569 - FedServer - INFO - Selected clients: [0, 1, 2]
+2026-02-12 12:51:18,299 - FedServer - INFO - Received update from client 0, weight: 20000
+2026-02-12 12:51:18,309 - FedServer - INFO - Received update from client 1, weight: 20000
+2026-02-12 12:51:18,312 - FedServer - INFO - Received update from client 2, weight: 20000
+2026-02-12 12:51:18,312 - FedServer - INFO - Aggregating 3 client updates
+2026-02-12 12:51:18,313 - FedServer - INFO - 
+============================================================
+2026-02-12 12:51:18,313 - FedServer - INFO - Round 4/5
+2026-02-12 12:51:18,313 - FedServer - INFO - ============================================================
+2026-02-12 12:51:18,314 - FedServer - INFO - Selected clients: [1, 2, 0]
+2026-02-12 12:51:27,038 - FedServer - INFO - Received update from client 1, weight: 20000
+2026-02-12 12:51:27,041 - FedServer - INFO - Received update from client 2, weight: 20000
+2026-02-12 12:51:27,044 - FedServer - INFO - Received update from client 0, weight: 20000
+2026-02-12 12:51:27,044 - FedServer - INFO - Aggregating 3 client updates
+2026-02-12 12:51:27,045 - FedServer - INFO - 
+============================================================
+2026-02-12 12:51:27,045 - FedServer - INFO - Round 5/5
+2026-02-12 12:51:27,046 - FedServer - INFO - ============================================================
+2026-02-12 12:51:27,046 - FedServer - INFO - Selected clients: [0, 1, 2]
+2026-02-12 12:51:35,703 - FedServer - INFO - Received update from client 0, weight: 20000
+2026-02-12 12:51:35,718 - FedServer - INFO - Received update from client 1, weight: 20000
+2026-02-12 12:51:35,720 - FedServer - INFO - Received update from client 2, weight: 20000
+2026-02-12 12:51:35,720 - FedServer - INFO - Aggregating 3 client updates
+2026-02-12 12:51:35,721 - FedServer - INFO - Federated training completed!
+2026-02-12 12:51:35,722 - FedServer - INFO - Finalizing server...
+2026-02-12 12:51:35,722 - FedServer - INFO - Server finalized
+2026-02-12 12:51:35,723 - FedServer - INFO - Finalizing server...
+2026-02-12 12:51:35,727 - FedServer - ERROR - Error sending to client 0: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-02-12 12:51:35,727 - FedServer - ERROR - Error sending to client 1: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-02-12 12:51:35,727 - FedServer - ERROR - Error sending to client 2: [WinError 10038] 在一个非套接字上尝试了一个操作。
+2026-02-12 12:51:35,728 - FedServer - INFO - Server finalized
